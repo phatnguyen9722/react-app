@@ -1,4 +1,5 @@
 import React from "react";
+import './TodosList.scss';
 
 function TodosList({todos, setTodos}) {
     return (

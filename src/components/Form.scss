@@ -1,0 +1,18 @@
+.form-todo {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .task-input {
+        width: 40%;
+    }
+    .btn-add {
+        cursor: pointer;
+        background-color: #0069CE;
+        width: 10%;
+        height: 35px;
+        color: aliceblue;
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import {v4 as uuidV4} from "uuid";
+import './Form.scss'
 
 function Form({input, setInput, todos, setTodos}) {
     const onInputChange = (event) => {
@@ -11,7 +12,7 @@ function Form({input, setInput, todos, setTodos}) {
         setInput ("");
     }
     return (
-        <form onSubmit={onFormSubmit}>
+        <form onSubmit={onFormSubmit} className="form-todo">
             <input 
                 type="text" 
                 placeholder="Enter to do.." 
