@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 
 import HomePage from '../pages/HomePage'
 import Shop from '../pages/Shop'
@@ -12,6 +12,7 @@ import ErrorPage from '../pages/ErrorPage'
 const Router = () => {
   return (
     <Routes>
+      <Route path="/" element={<Navigate to = "home"/>}/>
       <Route path="home" element={<HomePage />} />
       <Route path="shop" element={<Shop />} />
       <Route path="product" element={<Product />} />
