@@ -1,46 +1,30 @@
-import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
-import HomePage from  '../pages/HomePage'
+import HomePage from '../pages/HomePage'
 import Shop from '../pages/Shop'
 import Cart from '../pages/Cart'
 import Product from '../pages/Product'
 import Login from '../pages/Login'
 import CheckOut from '../pages/CheckOut'
 import SignUp from '../pages/SignUp'
+import ErrorPage from '../pages/ErrorPage'
 
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+const Router = () => {
+  return (
+    <Routes>
+      <Route path="home" element={<HomePage />} />
+      <Route path="shop" element={<Shop />} />
+      <Route path="product" element={<Product />} />
+      <Route path="login" element={<Login />} />
+      <Route path="checkout" element={<CheckOut />} />
+      <Route path="signup" element={<SignUp />} />
+      <Route path='cart' element={<Cart />} />
+      <Route />
+      <Route />
+      <Route />
+      <Route />
+    </Routes>
+  );
+}
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage/>,
-  },
-  {
-    path: "/shop",
-    element: <Shop/>,
-  },
-  {
-    path: "/product",
-    element: <Product/>,
-  },
-  {
-    path: "/Cart",
-    element: <Cart/>,
-  },
-  {
-    path: "/Login",
-    element: <Login/>,
-  },
-  {
-    path: "/CheckOut",
-    element: <CheckOut/>,
-  },
-  {
-    path: "/SignUp",
-    element: <SignUp/>,
-  },
-]);
-
-export default router
+export default Router;
