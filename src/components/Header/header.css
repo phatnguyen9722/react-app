@@ -6,20 +6,22 @@
 
 .logo {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo h1 {
     font-family: sans-serif;
-    color: #000;
+    color: #000 ;
+    margin-left: 2rem;
 }
 .logo img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
 }
 
 .navigation .menu {
     display: flex;
-
 }
 
 .navigation .menu .nav__item {

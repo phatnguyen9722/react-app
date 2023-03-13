@@ -4,12 +4,9 @@ import "./header.css";
 
 import logo from "../../assets/images/favicon.ico";
 
-import { Container, Row } from "reactstrap";
 function Header() {
   return (
     <header className="header">
-      <Container>
-        <Row>
           <div className="nav__wrapper">
             <div className="logo">
               <img src={logo} alt="logo here" />
@@ -27,14 +24,9 @@ function Header() {
                 <li className="nav__item">
                   <NavLink to="cart">Cart</NavLink>
                 </li>
-                <li className="nav__item">
-                  <NavLink to="home">Home</NavLink>
-                </li>
               </ul>
             </div>
           </div>
-        </Row>
-      </Container>
     </header>
   );
 }
